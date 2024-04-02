@@ -31,12 +31,12 @@ public class Print {
      * @param args -> arreglo de genericos, considere el primer elemento como el mensaje o candena de salida, separe arumentos con ','
      */
     public  void format(Object... args){
-        if (args.length == 0)
-            System.out.println();
-        else if (args.length==1) {
-            stdl(args[0]);
+        String cadenaOriginal;
+
+        cadenaOriginal = (args.length==0) ? "" : (String) args[0];
+        if (args.length<2) {
+            stdl(cadenaOriginal);
         } else{
-            String cadenaOriginal = (String) args[0];
             String[] valores = new String[args.length-1];
             int i = 0;
             for( ; i< args.length-1;i++){
