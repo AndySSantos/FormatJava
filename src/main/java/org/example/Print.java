@@ -49,7 +49,7 @@ public class Print {
             try{
                 nuevaCadena = nuevaCadena.replaceFirst("\\{\\}", valor);
             }catch (Exception e){
-                return "Error, argumentos insuficientes";
+                return "Error, aurgumentos faltantes o {} insuficientes";
             }
         }
 
