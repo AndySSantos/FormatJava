@@ -5,18 +5,31 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author andyleonardoserranosantos 
+ * @author andyleonardoserranosantos
+ * @version 1.0
  */
 public class Print {
 
+    /**
+     * Salida estandar
+     * @param e -> dato generico
+     */
     public  void std(Object e){
         System.out.printf(e.toString());
     }
 
+    /**
+     * Salida estandar con salto de linea
+     * @param e -> dato generico
+     */
     public void stdl(Object e){
         System.out.println(e.toString());
     }
 
+    /**
+     * Salida concatenada con salto de linea
+     * @param args -> arreglo de genericos, considere el primer elemento como el mensaje o candena de salida, separe arumentos con ','
+     */
     public  void format(Object... args){
         if (args.length == 0)
             System.out.println();
@@ -36,6 +49,12 @@ public class Print {
         }
     }
 
+    /**
+     * Remplaza '{}' en el mensaje, por cada uno de los argumentos de tipo string
+     * @param cadenaOriginal -> mensaje original
+     * @param valores -> arreglo de argumentos
+     * @return -> mensaje concatenado
+     */
     public static String reemplazarMarcadores(String cadenaOriginal, String[] valores) {
         int x=0;
         if(valores.length==0)
