@@ -14,11 +14,12 @@ class PrintTest {
 
     @Test
     void std() {
-
+        p.std("STD metodo");
     }
 
     @Test
     void stdl() {
+        p.stdl("Metodo");
     }
 
     @Test
