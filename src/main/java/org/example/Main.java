@@ -10,7 +10,8 @@ public class Main {
 
         Print pt = new Print();
 
-        pt.format("Hola");
+        pt.format("Rama lambda");
+
 
         for (int i = 1; i <= 5; i++) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
